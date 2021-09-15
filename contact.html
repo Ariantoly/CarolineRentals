@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href = "style_contact.css" rel = "stylesheet" \>
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo1.gif" alt="Logo" id="logo" \>
+        <button id="btnLogin">Login</button>
+        <button id="btnRegister">Register</button>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li class="btnNav" id="btnHome">Home</li>
+            <li class="dropdown" id="btnProduct">
+                <a>Product</a>
+                <div class = dropdownContent>
+                    <a href="product.html" id = "family">Family Car</a>
+                    <a href="product.html" id = "commercial">Commercial Car</a>
+                    <a href="product.html" id = "luxury">Luxury Car</a>
+                </div>
+            </li>
+            <li class="btnNav" id="btnContact" value = 1>Contact</li>
+        </ul>
+    </div>
+
+    <div class = "content">
+        <h1>GET IN TOUCH</h1>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <form>
+                                    Name
+                                    <br \>
+                                    <input class = "nameEmail" type = "text" placeholder = "Enter Name" \>
+                                    <br \><br \>
+                                    Email Address
+                                    <br \>
+                                    <input class = "nameEmail" type = "email" placeholder = "Enter Email" \>
+                                </form>
+                            </td>
+                            <td>
+                                <form> 
+                                    Message
+                                    <br \>
+                                    <textarea id = "message" placeholder = "Message"></textarea>
+                                    <br \>
+                                    <button id = "send">SEND MESSAGE</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class = "contactInfo">
+                        <h2>Contact</h2>
+                        Phone and WhatsApp
+                        <br \>
+                        +62899-2562-5625-6
+                        <br \><br \>
+                        Facebook
+                        <br \>
+                        <a>Caroline Rentals Facebook</a>
+                        <br \><br \>
+                        Email
+                        <br \>
+                        admin@carolinerentals.com
+                        <br><br>
+                        Location
+                        <br>
+                        Jalan Kyai Haji Syahdan No. 9, Kemanggisan, Palmerah, Jakarta Barat, DKI Jakarta 11480
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class = "footer">
+        <table>
+            <tr>
+                <td class = "left">
+                    <table>
+                        <tr>
+                            <td><a href = "http://instagram.com" target = "_blank"><img src = "images/instagram.png"></a></td>
+                            <td><a href = "http://youtube.com" target = "_blank"><img src = "images/youtube.png"></a></td>
+                            <td><a href = "http://twitter.com" target = "_blank"><img src = "images/twitter.png"></a></td>
+                            <td><a href = "http://facebook.com" target = "_blank"><img src = "images/facebook.png"></a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class = "right">
+                    Subscribe Our Newsletter
+                    <br>
+                    <input type = "text" placeholder = "Your Email">
+                    <br>
+                    <button>Subscribe</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class = "copyright">
+            &copyCopyright 2018 by Ariantoly
+        </div>
+    </div>
+    <script src = "js_contact.js"></script>
+</body>
+</html>

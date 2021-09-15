@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href = "style_login.css" rel = "stylesheet" \>
+</head>
+<body>
+    <div class = "header">
+        <img src = "images/logo1.gif" alt = "Logo" id = "logo" \>
+        <button id = "btnLogin">Login</button>
+        <button id = "btnRegister">Register</button>
+   </div>
+
+    <div class = "navigation">
+        <ul>
+            <li class = "btnNav" id = "btnHome">Home</li>
+            <li class = "dropdown" id = "btnProduct">
+                <a>Product</a>
+                <div class = "dropdownContent">
+                    <a href = "product.html" id = "family">Family Car</a>
+                    <a href = "product.html" id = "commercial">Commercial Car</a>
+                    <a href = "product.html" id = "luxury">Luxury Car</a>
+                </div>
+            </li>
+            <li class = "btnNav" id = "btnContact">Contact</li>
+        </ul>
+    </div>
+
+    <div class = content>
+        <h2>Login</h2>
+        <form>
+            Email
+            <br \><br \>
+            <input class = "txtLogin" id = "txtEmail" type = "email"\>
+            <br \><br \>
+            Password
+            <br \><br \>
+            <input class = "txtLogin" id = "txtPassword" type = "password" \>
+            <br \>
+            <br \>
+            <button id = "btnLogin1">Login</button>
+        </form>
+        <h5>Don't have an account? Register <a href = "register.html">here!</a></h5>
+    
+    </div>
+    
+    <div class = "footer">
+        <table>
+            <tr>
+                <td class = "left">
+                    <table>
+                        <tr>
+                            <td><a href = "http://instagram.com" target = "_blank"><img src = "images/instagram.png"></a></td>
+                            <td><a href = "http://youtube.com" target = "_blank"><img src = "images/youtube.png"></a></td>
+                            <td><a href = "http://twitter.com" target = "_blank"><img src = "images/twitter.png"></a></td>
+                            <td><a href = "http://facebook.com" target = "_blank"><img src = "images/facebook.png"></a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class = "right">
+                    Subscribe Our Newsletter
+                    <br>
+                    <input type = "text" placeholder = "Your Email">
+                    <br>
+                    <button>Subscribe</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class = "copyright">
+            &copyCopyright 2018 by Ariantoly
+        </div>
+    </div>
+
+    <script src = "js_login.js"></script>
+</body>
+</html>

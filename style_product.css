@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 84% 8% auto;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.header > #logo{
+    width: 15%;
+    padding-left: 20px;
+}
+
+.header > #btnLogin{
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header > #btnRegister{
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navigation{
+    position: relative;
+    background-color: black;
+    height: 40px;
+}
+
+.navigation > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation > ul > li {
+    color: white;
+    height: auto;
+    text-align: center;
+    justify-self: center;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    text-decoration: none;
+    width: 140px;
+    float: left;
+}
+
+.navigation > ul > .dropdown{
+    display: inline-block;
+}
+
+.navigation > ul > .dropdown > .dropdownContent{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    background-color: black;
+    width: 140px;
+}
+
+.navigation > ul > .dropdown > .dropdownContent > a{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.navigation > ul > .dropdown:hover .dropdownContent{
+    display: block;
+}
+
+.navigation > ul > .dropdown > .dropdownContent > a:hover{
+    background-color: red;
+}
+
+.navigation > ul > #btnProduct{
+    background-color: blue;
+}
+
+.content{
+    display: none;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.content > .carList{
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-spacing: 15px 0;
+}
+
+.content > .carList td{
+    border: black solid 1.5px;
+}
+
+.content > .carList td > img{
+    width: 150px;
+}
+
+.footer{
+    background-color: whitesmoke;
+    padding-top: 60px;
+}
+
+.footer > table{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer > table .left{
+    vertical-align: top;
+}
+
+.footer > table .left > table{
+    float: right;
+    border-spacing: 10px 0;
+    padding-top: 5px;
+}
+
+.footer > table .left > table td > a > img{
+    width: 80%;
+}
+
+.footer > table .right{
+    border: black solid 2px;
+    padding: 5px;
+}
+
+.footer > table .right > input{
+    background-color: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black solid 1px;
+    outline: none;
+    justify-self: center;
+    width: 200px;
+    margin-top: 6px;
+}
+
+.footer > table .right > button{
+    margin-top: 6px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer > .copyright{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: royalblue;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .header > #logo{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 0;
+    }
+
+    .header > #btnLogin{
+        display: block;
+        font-size: 6px;
+        width: 35px;
+        height: 10px;
+        position: relative;
+        left: 60%;
+        transform: translate(-50%);
+    }
+
+    .header > #btnRegister{
+        display: block;
+        font-size: 6px;
+        width: 35px;
+        height: 10px;
+        position: relative;
+        top: -10px;
+        left: 45%;
+        transform: translate(-50%);
+    }
+
+    .navigation{
+        position: relative;
+        height: 15px;
+    }
+      
+    .navigation > ul > li {
+        padding-top: 4.2px;
+        padding-bottom: 4.2px;
+        width: 60px;
+        font-size: 6px;
+    }
+    
+    .navigation > ul > .dropdown > .dropdownContent{
+        top: 15px;
+        left: 60px;
+        width: 60px;
+    }
+    
+    .navigation > ul > .dropdown > .dropdownContent > a{
+        padding: 4px;
+    }
+    
+    .navigation > ul > .dropdown:active .dropdownContent{
+        display: block;
+    }
+
+    .content{
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 6px;
+        padding-bottom: 12px;
+    }
+    
+    .content > .carList{
+        border-spacing: 5px 0;
+    }
+    
+    .content > .carList td{
+        border: black solid 1px;
+    }
+    
+    .content > .carList td > img{
+        width: 45px;
+    }
+
+    .footer{
+        padding-top: 20px;
+    }
+
+    .footer > table{
+        font-size: 6px;
+    }
+
+    .footer > table .left > table{
+        border-spacing: 0;
+        padding-top: 2px;
+    }
+
+    .footer > table .left > table td > a > img{
+        width: 40%;
+    }
+
+    .footer > table .right > input{
+        width: 100px;
+        font-size: 6px;
+    }
+
+    .footer > table .right > button{
+        font-size: 6px;
+        width: 40px;
+        height: 12px;
+    }
+
+    .footer > .copyright{
+        font-size: 8px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+}
